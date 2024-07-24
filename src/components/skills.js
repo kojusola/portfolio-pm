@@ -8,6 +8,7 @@ const Skills = ({ siteTitle }) => {
   return (
     <Chakra.Box
       className="skills"
+      id="skills"
       px={{ base: "20px", md: "100px" }}
       pt={{ base: "40px", md: "64px" }}
       pb={{ base: "20px", md: "50px" }}

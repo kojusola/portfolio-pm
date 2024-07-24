@@ -8,6 +8,7 @@ const Contacts = ({ siteTitle }) => {
   return (
     <Chakra.Box
       className="contact"
+      id="contact"
       px={{ base: "20px", md: "100px" }}
       pt={{ base: "40px", md: "64px" }}
       pb={{ base: "220px", md: "200px" }}
@@ -61,14 +62,18 @@ const Contacts = ({ siteTitle }) => {
           duration={1.5}
           stagger={0.2}
         >
-          <Chakra.Box
+          <Chakra.Link
             fontFamily="Roboto"
             fontWeight="400"
             fontSize="18px"
             lineHeight="21px"
+            outline="none"
+            cursor="none"
             mb="0px"
             position="relative"
             color="black"
+            href="mailto:fafemiadeolas@gmail.com"
+            target="_blank"
             _before={{
               content: '""',
               position: "absolute",
@@ -88,6 +93,7 @@ const Contacts = ({ siteTitle }) => {
               color: "black",
               opacity: "1",
             }}
+            _focus={{ boxShadow: "none" }}
             css={{
               ":hover:before": {
                 transform: "scale(1)",
@@ -95,15 +101,18 @@ const Contacts = ({ siteTitle }) => {
               },
             }}
           >
-            Github
-          </Chakra.Box>
+            Email
+          </Chakra.Link>
 
-          <Chakra.Box
+          <Chakra.Link
             fontFamily="Roboto"
             fontWeight="400"
             fontSize="18px"
             lineHeight="21px"
+            href="https://www.linkedin.com/in/adeolafafemi/"
+            target="_blank"
             mb="0px"
+            cursor="none"
             position="relative"
             color="black"
             _before={{
@@ -125,6 +134,7 @@ const Contacts = ({ siteTitle }) => {
               color: "black",
               opacity: "1",
             }}
+            _focus={{ boxShadow: "none" }}
             css={{
               ":hover:before": {
                 transform: "scale(1)",
@@ -133,7 +143,7 @@ const Contacts = ({ siteTitle }) => {
             }}
           >
             LinkedIn
-          </Chakra.Box>
+          </Chakra.Link>
           {/* <Chakra.Box
             fontFamily="Roboto"
             fontWeight="400"

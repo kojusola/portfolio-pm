@@ -29,15 +29,56 @@ const Header = ({ siteTitle }) => {
       <Chakra.Box
         display={{ base: "none", md: "flex" }}
         justifyContent="space-between"
-        maxWidth={{ base: "auto", md: "286px" }}
+        maxWidth={{ base: "auto", md: "386px" }}
         w={{ base: "auto", md: "100%" }}
       >
-        <Chakra.Box
+        <Chakra.Link
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          href="#projects"
+          color="black"
+          cursor="none"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          _focus={{ boxShadow: "none" }}
+          cursor="none"
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
+        >
+          projects
+        </Chakra.Link>
+        <Chakra.Link
+          fontFamily="Roboto"
+          fontWeight="400"
+          fontSize="18px"
+          lineHeight="21px"
+          mb="0px"
+          href="#skills"
           position="relative"
           color="black"
           _before={{
@@ -59,6 +100,8 @@ const Header = ({ siteTitle }) => {
             color: "black",
             opacity: "1",
           }}
+          _focus={{ boxShadow: "none" }}
+          cursor="none"
           css={{
             ":hover:before": {
               transform: "scale(1)",
@@ -66,14 +109,54 @@ const Header = ({ siteTitle }) => {
             },
           }}
         >
-          Contact me
-        </Chakra.Box>
-        <Chakra.Text
+          skills
+        </Chakra.Link>
+        <Chakra.Link
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          href="#growth"
+          color="black"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          _focus={{ boxShadow: "none" }}
+          cursor="none"
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
+        >
+          growth
+        </Chakra.Link>
+        <Chakra.Link
+          fontFamily="Roboto"
+          fontWeight="400"
+          fontSize="18px"
+          lineHeight="21px"
+          mb="0px"
+          href="#contact"
           position="relative"
           color="black"
           _before={{
@@ -95,6 +178,8 @@ const Header = ({ siteTitle }) => {
             color: "black",
             opacity: "1",
           }}
+          _focus={{ boxShadow: "none" }}
+          cursor="none"
           css={{
             ":hover:before": {
               transform: "scale(1)",
@@ -102,44 +187,8 @@ const Header = ({ siteTitle }) => {
             },
           }}
         >
-          Projects
-        </Chakra.Text>
-        <Chakra.Text
-          fontFamily="Roboto"
-          fontWeight="400"
-          fontSize="18px"
-          lineHeight="21px"
-          mb="0px"
-          position="relative"
-          color="black"
-          _before={{
-            content: '""',
-            position: "absolute",
-            width: "100%",
-            transform: "scale(0)",
-            height: "1px",
-            bottom: "0",
-            right: "0",
-            backgroundColor: "black",
-            transformOrigin: "bottom right ",
-            transition: "transform 0.3s ease-out",
-          }}
-          display="block"
-          opacity={{ base: "1", md: "1" }}
-          transition="opacity 0.5s, color 0.5s"
-          _hover={{
-            color: "black",
-            opacity: "1",
-          }}
-          css={{
-            ":hover:before": {
-              transform: "scale(1)",
-              transformOrigin: "bottom left",
-            },
-          }}
-        >
-          My Info
-        </Chakra.Text>
+          contact info
+        </Chakra.Link>
       </Chakra.Box>
       <Chakra.Box display={{ base: "flex", md: "none" }} alignItems="center">
         <button onClick={onOpen}>
@@ -169,7 +218,7 @@ const Header = ({ siteTitle }) => {
                 display="flex"
                 flexDirection="column"
               >
-                <Chakra.Box
+                <Chakra.Link
                   fontFamily="Roboto"
                   fontWeight="700"
                   fontSize="48px"
@@ -178,6 +227,7 @@ const Header = ({ siteTitle }) => {
                   mb="0px"
                   width="auto"
                   position="relative"
+                  href="#projects"
                   _before={{
                     content: '""',
                     position: "absolute",
@@ -197,44 +247,7 @@ const Header = ({ siteTitle }) => {
                     color: "white",
                     opacity: "1",
                   }}
-                  css={{
-                    ":hover:before": {
-                      transform: "scale(1)",
-                      transformOrigin: "bottom left",
-                    },
-                  }}
-                >
-                  Contact Me
-                </Chakra.Box>
-                <Chakra.Box
-                  fontFamily="Roboto"
-                  fontWeight="700"
-                  fontSize="48px"
-                  lineHeight="72px"
-                  color="white"
-                  marginTop="32px"
-                  width="auto"
-                  mb="0px"
-                  position="relative"
-                  _before={{
-                    content: '""',
-                    position: "absolute",
-                    width: "100%",
-                    transform: "scale(0)",
-                    height: "1px",
-                    bottom: "0",
-                    right: "0",
-                    backgroundColor: "white",
-                    transformOrigin: "bottom right ",
-                    transition: "transform 0.3s ease-out",
-                  }}
-                  display="block"
-                  opacity={{ base: "1", md: "1" }}
-                  transition="opacity 0.5s, color 0.5s"
-                  _hover={{
-                    color: "white",
-                    opacity: "1",
-                  }}
+                  _focus={{ boxShadow: "none" }}
                   css={{
                     ":hover:before": {
                       transform: "scale(1)",
@@ -243,14 +256,55 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   Projects
-                </Chakra.Box>
-                <Chakra.Box
+                </Chakra.Link>
+                <Chakra.Link
                   fontFamily="Roboto"
                   fontWeight="700"
                   fontSize="48px"
                   lineHeight="72px"
                   color="white"
                   marginTop="32px"
+                  href="#skills"
+                  width="auto"
+                  mb="0px"
+                  position="relative"
+                  _before={{
+                    content: '""',
+                    position: "absolute",
+                    width: "100%",
+                    transform: "scale(0)",
+                    height: "1px",
+                    bottom: "0",
+                    right: "0",
+                    backgroundColor: "white",
+                    transformOrigin: "bottom right ",
+                    transition: "transform 0.3s ease-out",
+                  }}
+                  display="block"
+                  opacity={{ base: "1", md: "1" }}
+                  transition="opacity 0.5s, color 0.5s"
+                  _hover={{
+                    color: "white",
+                    opacity: "1",
+                  }}
+                  _focus={{ boxShadow: "none" }}
+                  css={{
+                    ":hover:before": {
+                      transform: "scale(1)",
+                      transformOrigin: "bottom left",
+                    },
+                  }}
+                >
+                  skills
+                </Chakra.Link>
+                <Chakra.Link
+                  fontFamily="Roboto"
+                  fontWeight="700"
+                  fontSize="48px"
+                  lineHeight="72px"
+                  color="white"
+                  marginTop="32px"
+                  href="#growth"
                   mb="0px"
                   width="auto"
                   position="relative"
@@ -273,6 +327,7 @@ const Header = ({ siteTitle }) => {
                     color: "white",
                     opacity: "1",
                   }}
+                  _focus={{ boxShadow: "none" }}
                   css={{
                     ":hover:before": {
                       transform: "scale(1)",
@@ -280,8 +335,48 @@ const Header = ({ siteTitle }) => {
                     },
                   }}
                 >
-                  My Info
-                </Chakra.Box>
+                  growth
+                </Chakra.Link>
+                <Chakra.Link
+                  fontFamily="Roboto"
+                  fontWeight="700"
+                  fontSize="48px"
+                  lineHeight="72px"
+                  color="white"
+                  marginTop="32px"
+                  href="#contact"
+                  mb="0px"
+                  width="auto"
+                  position="relative"
+                  _before={{
+                    content: '""',
+                    position: "absolute",
+                    width: "100%",
+                    transform: "scale(0)",
+                    height: "1px",
+                    bottom: "0",
+                    right: "0",
+                    backgroundColor: "white",
+                    transformOrigin: "bottom right ",
+                    transition: "transform 0.3s ease-out",
+                  }}
+                  display="block"
+                  opacity={{ base: "1", md: "1" }}
+                  transition="opacity 0.5s, color 0.5s"
+                  _hover={{
+                    color: "white",
+                    opacity: "1",
+                  }}
+                  _focus={{ boxShadow: "none" }}
+                  css={{
+                    ":hover:before": {
+                      transform: "scale(1)",
+                      transformOrigin: "bottom left",
+                    },
+                  }}
+                >
+                  contact info
+                </Chakra.Link>
               </Chakra.Box>
             </Chakra.DrawerBody>
           </Chakra.DrawerContent>

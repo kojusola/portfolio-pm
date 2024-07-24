@@ -87,7 +87,7 @@ const Hero = ({ siteTitle }) => {
             }}
           >
             <Chakra.Box
-              height="150px"
+              height="180px"
               ml="-1px"
               width="3px"
               backgroundColor="black"

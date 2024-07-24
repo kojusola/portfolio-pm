@@ -100,6 +100,7 @@ const Projects = ({ siteTitle }) => {
   return (
     <Chakra.Box
       className="projectTop"
+      id="projects"
       px={{ base: "20px", md: "100px" }}
       pt={{ base: "30px", md: "111px" }}
     >
@@ -125,6 +126,7 @@ const Projects = ({ siteTitle }) => {
         display="flex"
         justifyContent="space-between"
         className="project"
+        height="auto"
         mt={{ base: "20px", md: "40px" }}
       >
         <Chakra.Box maxWidth="700px" with="100%">
@@ -282,6 +284,7 @@ const Projects = ({ siteTitle }) => {
                                 color: "black",
                                 opacity: "1",
                               }}
+                              _focus={{ boxShadow: "none" }}
                               css={{
                                 ":hover:before": {
                                   transform: "scale(1)",
@@ -306,17 +309,17 @@ const Projects = ({ siteTitle }) => {
         >
           <Tween
             to={{
-              yPercent: 200,
+              yPercent: 450,
               scrollTrigger: {
                 trigger: ".project",
                 start: "top top",
                 end: "bottom bottom",
-                scrub: 0.5,
+                scrub: 0.7,
               },
             }}
           >
             <Chakra.Box
-              height="150px"
+              height="200px"
               ml="-1px"
               width="3px"
               backgroundColor="black"
