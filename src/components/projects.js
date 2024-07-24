@@ -56,7 +56,7 @@ const Projects = ({ siteTitle }) => {
       name: "Boilerplate",
       technologies: ["Figma", "Google Docs", "Linear", "Excel"],
       description: `Boilerplate is a particular project stacks that show simple, secure and efficient ways of achieving common things that one tends to need to do in those stacks.`,
-      whatWasDone: `I collaborated with a team to develop a product requirements document for the boilerplate and created actionable tickets for developers. Additionally, managed the developers to bring the boilerplate to fruition.`,
+      whatWasDone: `I collaborated with a team to develop a product requirements document for the boilerplate and created actionable tickets for developers. Additionally, efficiently managed the developers to bring the boilerplate to fruition.`,
       links: [
         {
           name: "Prd",
@@ -76,7 +76,7 @@ const Projects = ({ siteTitle }) => {
       name: "Youtube Summarizer",
       technologies: ["Figma", "Google Docs", "Linear", "Excel"],
       description: `It is an AI-powered application that provides concise summaries of long or short videos, capturing the main points without the need to watch the entire video. `,
-      whatWasDone: `I collaborated with a team to develop a product requirements document and functional requirements documents for the YouTube Summarizer application and created actionable tickets for the developers. Additionally, I managed designers to create the application's designs.`,
+      whatWasDone: `I collaborated with a team to develop a product requirements document and functional requirements documents for the YouTube Summarizer application and created actionable tickets for the developers. Additionally, I efficiently managed designers to create the application's designs.`,
       links: [
         {
           name: "Prd",
