@@ -44,7 +44,7 @@ const Projects = ({ siteTitle }) => {
       name: "Market Intelligence Report",
       technologies: ["Google Docs"],
       description: `Market Intelligence report is a comprehensive analyses that provides detailed information about a specific market or industry`,
-      whatWasDone: `I created a market intelligence report on a youtube summarizer which includes competitor analysis, value proposition, marketing channels customer personas etc.`,
+      whatWasDone: `I created a market intelligence report on a youtube summarizer which includes competitor analysis, value proposition, marketing channels, customer personas etc.`,
       links: [
         {
           name: "Analysis",
@@ -76,7 +76,7 @@ const Projects = ({ siteTitle }) => {
       name: "Youtube Summarizer",
       technologies: ["Figma", "Google Docs", "Linear", "Excel"],
       description: `It is an AI-powered application that provides concise summaries of long or short videos, capturing the main points without the need to watch the entire video. `,
-      whatWasDone: `I collaborated with a team to develop a product requirements document and functional requirements documents for the YouTube Summarizer and created actionable tickets for the developers. Additionally, I managed designers to create the application's designs.`,
+      whatWasDone: `I collaborated with a team to develop a product requirements document and functional requirements documents for the YouTube Summarizer application and created actionable tickets for the developers. Additionally, I managed designers to create the application's designs.`,
       links: [
         {
           name: "Prd",

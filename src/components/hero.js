@@ -58,7 +58,7 @@ const Hero = ({ siteTitle }) => {
             management, analytical and problem-solving abilities. My
             professional journey began as an Intern Product Manager at HNG
             Internship 11, where I gained hands-on experience in creating
-            product require documents (prd) for a boilerplate and
+            product requirement documents (prd) for a boilerplate and
             product(Youtube summarizer), functional requirement document,
             creating tickets for a MVP, user research, feature prioritization,
             and competitive analysis. My expertise includes strategic planning,

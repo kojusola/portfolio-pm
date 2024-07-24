@@ -45,8 +45,8 @@ const Growth = ({ siteTitle }) => {
         <Chakra.Box
           fontFamily="Roboto"
           fontWeight="400"
-          fontSize={{ base: "16px", md: "18px" }}
-          lineHeight="27px"
+          fontSize={{ base: "16px", md: "16px" }}
+          lineHeight={{ base: "27px", md: "27px" }}
           mb="0px"
           position="relative"
           color="black"
@@ -77,12 +77,13 @@ const Growth = ({ siteTitle }) => {
           >
             HNG Internship
           </Chakra.Link>{" "}
-          , and expand my technical knowledge by learning the basics of a
-          backend framework. Moreover, I aim to strengthen my understanding of
-          UX design principles and strategic planning to create more intuitive
-          products and align them effectively with business goals. This
-          continuous learning and development will enable me to drive greater
-          success in future projects.
+          collaborating with a cross functional team , and expand my technical
+          knowledge by learning the basics of a backend framework. Moreover, I
+          aim to strengthen my understanding of UX design principles and
+          strategic planning to create more intuitive products and align them
+          effectively with business goals. This continuous learning and
+          development will enable me to drive greater success in future
+          projects.
         </Chakra.Box>
       </Chakra.Box>
     </Chakra.Box>
