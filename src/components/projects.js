@@ -43,7 +43,7 @@ const Projects = ({ siteTitle }) => {
     {
       name: "Market Intelligence Report",
       technologies: ["Google Docs"],
-      description: `Market Intelligence report is a comprehensive analyses that provides detailed information about a specific market or industry`,
+      description: `Market Intelligence report is a comprehensive analyses that provides detailed information about a specific market or industry.`,
       whatWasDone: `I created a market intelligence report on a youtube summarizer which includes competitor analysis, value proposition, marketing channels, customer personas etc.`,
       links: [
         {
